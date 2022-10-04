@@ -1,10 +1,7 @@
 <div>
     <div class="card">
         <div class="card-header">
-<<<<<<< HEAD
-=======
             @if(auth()->user()->role == 'admin')
->>>>>>> d497433 (aa)
             @if($rekomendasis->count() > 0)
             <h3 class="card-title"><button type="button" class="btn btn-md btn-danger" data-toggle="modal" data-target="#modalReset"> <i class="fa fa-eraser" aria-hidden="true"></i>
                     Reset Rekomendasi</button>
@@ -14,10 +11,7 @@
                     Tambahkan Hasil Perhitungan</a>
             </h3>
             @endif
-<<<<<<< HEAD
-=======
             @endif
->>>>>>> d497433 (aa)
         </div>
         <div class="card-body text-center">
             <div class="row">
@@ -49,10 +43,7 @@
                                 <th>Kelas</th>
                                 <th>Nilai Preferensi</th>
                                 <th>Keterangan</th>
-<<<<<<< HEAD
-=======
                                 <th>Aksi</th>
->>>>>>> d497433 (aa)
                             </tr>
                         </thead>
                         <tbody>
@@ -67,12 +58,6 @@
                                 <td>{{ $rekomendasi->kelas }}</td>
                                 <td>{{ $rekomendasi->nilai_preferensi }}</td>
                                 <td>{{ $rekomendasi->keterangan }}</td>
-<<<<<<< HEAD
-                            </tr>
-                            @empty
-                            <tr>
-                                <td colspan="6" class="text-center">Tidak ada data.</td>
-=======
                                 <td>
                                     {{-- PENERIMA --}}
                                     <button wire:click='delete({{ $rekomendasi->id }})' type="button" class="btn btn-sm btn-success" data-toggle="toltipe" title="Tandai Sebagai Penerima">
@@ -83,7 +68,6 @@
                             @empty
                             <tr>
                                 <td colspan="7" class="text-center">Tidak ada data.</td>
->>>>>>> d497433 (aa)
                             </tr>
                             @endforelse
                         </tbody>

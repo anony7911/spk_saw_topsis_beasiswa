@@ -34,12 +34,8 @@ class DataPerhitungan extends Component
     public $solusi_ideal_positif, $solusi_ideal_negatif;
     public $jarak_positif, $jarak_negatif;
     public $preferensi = [];
-<<<<<<< HEAD
-    public $nilai_preferensi, $alternatif_id, $rekomendasi, $jml_penerima, $keterangan;
-=======
     public $nilai_preferensi, $alternatif_id, $rekomendasi, $jml_penerima, $keterangan, $jumlah_layak;
     public $id_alternatif_terbaik, $alternatif_terbaik, $alternatif_preferensi;
->>>>>>> d497433 (aa)
     // public $nilai_preferensi;
     public function render()
     {
@@ -253,16 +249,11 @@ class DataPerhitungan extends Component
         }
         //nilai preferensi
         foreach ($this->alternatifs as $alternatif) {
-<<<<<<< HEAD
-
-            $this->preferensi[] = $this->jarak_negatif[$alternatif->id] / ($this->jarak_positif[$alternatif->id] + $this->jarak_negatif[$alternatif->id]);
-=======
             $this->preferensi[] = $this->jarak_negatif[$alternatif->id] / ($this->jarak_positif[$alternatif->id] + $this->jarak_negatif[$alternatif->id]);
             // get preferensi berdasarkan id alternatif
             $this->alternatif_preferensi[$alternatif->id] = $this->jarak_negatif[$alternatif->id] /
             ($this->jarak_positif[$alternatif->id] + $this->jarak_negatif[$alternatif->id]);
 
->>>>>>> d497433 (aa)
         }
         return view('livewire.data-perhitungan', [
             // 'item' => $this->item,
@@ -303,21 +294,6 @@ class DataPerhitungan extends Component
     }
 
     public function store(){
-<<<<<<< HEAD
-        $aa = 0;
-        $bb = 0;
-        foreach ($this->alternatifs as $alternatif) {
-            if($this->preferensi[$bb++] > 0.49){
-                $this->keterangan = 'Layak';
-            }else{
-                $this->keterangan = 'Tidak Layak';
-            }
-
-            $this->rekomendasi = Rekomendasi::create([
-                'alternatif_id' => $alternatif->id,
-                'nilai_preferensi' => number_format($this->preferensi[$aa++], 2),
-                'keterangan' => $this->keterangan,
-=======
         //validasi jumlah_layak
         $this->validate([
         'jumlah_layak' => 'required',
@@ -342,7 +318,6 @@ class DataPerhitungan extends Component
             'alternatif_id' => $alternatif->id,
             'nilai_preferensi' => $preferensi[$alternatif->id],
             'keterangan' => $keterangan,
->>>>>>> d497433 (aa)
             ]);
         }
         return redirect()->route('rekomendasi')->with('success', 'Data hasil perhitungan berhasil disimpan.');

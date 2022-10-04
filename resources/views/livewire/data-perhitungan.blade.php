@@ -216,11 +216,6 @@
                     </table>
                 </div>
             </div>
-<<<<<<< HEAD
-            <button type="submit" wire:click.prevent="store()" class="btn btn-primary btn-block mb-4 mt-4">
-                Simpan Hasil Perhitungan
-            </button>
-=======
             {{-- input jumlah layak --}}
             <div class="row mt-1">
                 <div class="col-md-12 bg-secondary">
@@ -239,7 +234,6 @@
                     Simpan Hasil Perhitungan
                 </button>
             </div>
->>>>>>> d497433 (aa)
         </div>
     </div>
 </div>

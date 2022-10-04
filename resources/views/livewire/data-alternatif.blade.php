@@ -61,15 +61,9 @@
                                     <button wire:click="alternatifId({{ $alternatif->id }})" class="btn btn-sm btn-warning m-1" data-toggle="modal" data-target="#modalEdit">
                                         <i class="fa fa-edit" aria-hidden="true"></i>
                                     </button>
-<<<<<<< HEAD
-                                    <button wire:click="deleteAlternatif({{ $alternatif->id }})" class="btn btn-sm btn-danger">
-                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                    </button>
-=======
                                     <!-- <button wire:click="deleteAlternatif({{ $alternatif->id }})" class="btn btn-sm btn-danger">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button> -->
->>>>>>> d497433 (aa)
                                 </td>
                             </tr>
                             @endforeach

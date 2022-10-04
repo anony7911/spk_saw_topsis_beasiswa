@@ -37,11 +37,6 @@ class DataRekomendasi extends Component
     }
 
     public function resetRekomendasi(){
-<<<<<<< HEAD
-        Rekomendasi::truncate();
-        session()->flash('error', 'Data Rekomendasi Berhasil Dihapus');
-    }
-=======
         Rekomendasi::where('deleted_at', null)->forceDelete();
         session()->flash('error', 'Data Rekomendasi Berhasil Dihapus');
     }
@@ -54,5 +49,4 @@ class DataRekomendasi extends Component
         $rekomendasi->delete();
         session()->flash('success', 'Data Rekomendasi Berhasil Ditandai Sebagai Penerima PIP');
     }
->>>>>>> d497433 (aa)
 }
