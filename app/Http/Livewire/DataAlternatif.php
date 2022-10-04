@@ -22,7 +22,11 @@ class DataAlternatif extends Component
     protected $updatesQueryString = ['search'];
 
     protected $alternatifs;
+<<<<<<< HEAD
     public $nama_lengkap, $nis, $kelas, $pekerjaan_ortu, $penghasilan_ortu, $jumlah_tanggungan, $status_anak, $pemegang_kks, $pemegang_pkh, $pemegang_sktm,
+=======
+    public $nama_lengkap, $nis, $kelas, $pekerjaan_ortu, $penghasilan_ortu, $jumlah_tanggungan, $status_anak, $pemegang_kks, $pemegang_pkh, $pemegang_sktm, 
+>>>>>>> d497433 (aa)
         $alternatifId;
 
     public function resetInput()

@@ -5,6 +5,10 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+<<<<<<< HEAD
+=======
+use Auth;
+>>>>>>> d497433 (aa)
 
 class LoginController extends Controller
 {
@@ -26,6 +30,12 @@ class LoginController extends Controller
      *
      * @var string
      */
+<<<<<<< HEAD
+=======
+    // use AuthenticatesUsers {
+    //     logout as performLogout;
+    // }
+>>>>>>> d497433 (aa)
     protected $redirectTo = RouteServiceProvider::HOME;
 
     /**
@@ -37,4 +47,12 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+<<<<<<< HEAD
+=======
+
+    public function store(Request $request) {
+        Auth::logout();
+        return redirect('/login');
+    }
+>>>>>>> d497433 (aa)
 }

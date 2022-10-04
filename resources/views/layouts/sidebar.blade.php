@@ -21,13 +21,21 @@
 
                 <li class="nav-item">
                     {{-- <a href="#" class="nav-link active"> --}}
+<<<<<<< HEAD
                     <a href="{{ url('home') }}" class="nav-link">
+=======
+                    <a href="{{ url('home') }}" class="nav-link @if(request()->is('home')) active @endif">
+>>>>>>> d497433 (aa)
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
                         </p>
                     </a>
                 </li>
+<<<<<<< HEAD
+=======
+                @if(auth()->user()->role == 'admin')
+>>>>>>> d497433 (aa)
                 <li class="nav-item">
                     <a href="{{ url('/alternatif') }}" class="nav-link @if(request()->is('alternatif')) active @endif">
                         <i class="nav-icon fas fa-th"></i>
@@ -53,6 +61,10 @@
                         </p>
                     </a>
                 </li>
+<<<<<<< HEAD
+=======
+                @endif
+>>>>>>> d497433 (aa)
                 <li class="nav-item">
                     <a href="{{ url('/rekomendasi') }}" class="nav-link @if(request()->is('rekomendasi')) active @endif">
                         <i class="nav-icon fas fa-th"></i>
@@ -62,6 +74,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
+<<<<<<< HEAD
                     <a href="{{ url('/manajuser') }}" class="nav-link @if(request()->is('manajuser')) active @endif">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
@@ -87,6 +100,25 @@
                         </li>
                     </ul>
                 </li> --}}
+=======
+                    <a href="{{ url('/penerima') }}" class="nav-link @if(request()->is('penerima')) active @endif">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Penerima
+                        </p>
+                    </a>
+                </li>
+                @if(auth()->user()->role == 'admin')
+                <li class="nav-item">
+                    <a href="{{ url('/manajuser') }}" class="nav-link @if(request()->is('manajuser')) active @endif">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            Manajemen User
+                        </p>
+                    </a>
+                </li>
+                @endif
+>>>>>>> d497433 (aa)
                 <li class="nav-header"></li>
                 <li class="nav-item text-white">
                     <a href="{{ route('logout') }}" class="nav-link btn btn-md btn-danger" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

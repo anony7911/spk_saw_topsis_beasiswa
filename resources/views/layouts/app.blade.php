@@ -43,13 +43,21 @@
                         @guest
                         @if (Route::has('login'))
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+=======
+                            <!-- <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a> -->
+>>>>>>> d497433 (aa)
                         </li>
                         @endif
 
                         @if (Route::has('register'))
                         <li class="nav-item">
+<<<<<<< HEAD
                             <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+=======
+                            <!-- <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a> -->
+>>>>>>> d497433 (aa)
                         </li>
                         @endif
                         @else

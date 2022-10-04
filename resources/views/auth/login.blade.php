@@ -41,13 +41,21 @@
 
                         <div class="row mb-3">
                             <div class="col-md-6 offset-md-4">
+<<<<<<< HEAD
                                 <div class="form-check">
+=======
+                                <!-- <div class="form-check">
+>>>>>>> d497433 (aa)
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
                                         {{ __('Remember Me') }}
                                     </label>
+<<<<<<< HEAD
                                 </div>
+=======
+                                </div> -->
+>>>>>>> d497433 (aa)
                             </div>
                         </div>
 
@@ -57,11 +65,19 @@
                                     {{ __('Login') }}
                                 </button>
 
+<<<<<<< HEAD
                                 @if (Route::has('password.request'))
                                     <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
+=======
+                                <!-- @if (Route::has('password.request'))
+                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
+                                @endif -->
+>>>>>>> d497433 (aa)
                             </div>
                         </div>
                     </form>

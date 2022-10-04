@@ -216,9 +216,30 @@
                     </table>
                 </div>
             </div>
+<<<<<<< HEAD
             <button type="submit" wire:click.prevent="store()" class="btn btn-primary btn-block mb-4 mt-4">
                 Simpan Hasil Perhitungan
             </button>
+=======
+            {{-- input jumlah layak --}}
+            <div class="row mt-1">
+                <div class="col-md-12 bg-secondary">
+                    <div class="form-group text-left">
+                        <label class="text-lg" for="jumlah_layak">Masukkan Jumlah Kuota</label>
+                        <input type="number" wire:model='jumlah_layak' class="form-control @error('jumlah_layak') is-invalid @enderror" value="{{ old('jumlah_layak') }}">
+                        @error('jumlah_layak')
+                        <div class="invalid-feedback text-white">
+                            {{ $message }}
+                        </div>
+                        @enderror
+                    </div>
+                </div>
+
+                <button type="submit" wire:click.prevent="store()" class="btn btn-primary btn-block mb-4 mt-4">
+                    Simpan Hasil Perhitungan
+                </button>
+            </div>
+>>>>>>> d497433 (aa)
         </div>
     </div>
 </div>

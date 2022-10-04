@@ -1,5 +1,6 @@
 <div>
     <div class="card">
+<<<<<<< HEAD
         <div class="card-header">
             <h3 class="card-title"><button type="button" class="btn btn-md btn-primary" data-toggle="modal" data-target="#modalTambah"> <i class="fa fa-plus-circle" aria-hidden="true"></i>
                     Data Kriteria</button>
@@ -24,6 +25,32 @@
                     <input wire:model.debounce.300ms="search" class="form-control" type="text" placeholder="Search...">
                 </div>
             </div>
+=======
+        <!--<div class="card-header">-->
+        <!--    <h3 class="card-title"><button type="button" class="btn btn-md btn-primary" data-toggle="modal" data-target="#modalTambah"> <i class="fa fa-plus-circle" aria-hidden="true"></i>-->
+        <!--            Data Kriteria</button>-->
+        <!--    </h3>-->
+        <!--</div>-->
+        <div class="card-body text-center">
+            <!--<div class="row">-->
+            <!--    <div class="col-md-12">-->
+            <!--        @include('layouts._alert')-->
+            <!--    </div>-->
+            <!--    <div class="col-md-6 form-inline mb-2 mt-2">-->
+            <!--        Per Page: &nbsp;-->
+            <!--        <select wire:model="perPage" class="form-control">-->
+            <!--            <option>2</option>-->
+            <!--            <option>5</option>-->
+            <!--            <option>10</option>-->
+            <!--            <option>15</option>-->
+            <!--            <option>25</option>-->
+            <!--        </select>-->
+            <!--    </div>-->
+            <!--    <div class="col-md-6">-->
+            <!--        <input wire:model.debounce.300ms="search" class="form-control" type="text" placeholder="Search...">-->
+            <!--    </div>-->
+            <!--</div>-->
+>>>>>>> d497433 (aa)
             <div class="row mt-1">
                 <div class="col-md-12 table-responsive">
                     <table class="table table-bordered table-striped">
@@ -47,9 +74,15 @@
                                     <button wire:click="kriteriaId({{ $kriteria->id }})" class="btn btn-sm btn-warning m-1" data-toggle="modal" data-target="#modalEdit">
                                         <i class="fa fa-edit" aria-hidden="true"></i>
                                     </button>
+<<<<<<< HEAD
                                     <button wire:click="deleteKriteria({{ $kriteria->id }})" class="btn btn-sm btn-danger">
                                         <i class="fa fa-trash" aria-hidden="true"></i>
                                     </button>
+=======
+                                    <!--<button wire:click="deleteKriteria({{ $kriteria->id }})" class="btn btn-sm btn-danger">-->
+                                    <!--    <i class="fa fa-trash" aria-hidden="true"></i>-->
+                                    <!--</button>-->
+>>>>>>> d497433 (aa)
                                 </td>
                             </tr>
                             @endforeach
